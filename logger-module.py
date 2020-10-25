@@ -1,8 +1,9 @@
 import logging
+# types of levels = debug < info < warning < error < critical
 logger = logging.getLogger(__name__)
 #creating streamhandler and filehandler
 st = logging.StreamHandler()
-fi = logging.FileHandler("handler")
+fi = logging.FileHandler("/home/mmohdbilal/bilal/logger-module/file_handler")
 #setting level
 st.setLevel(logging.WARNING)
 fi.setLevel(logging.ERROR)
